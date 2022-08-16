@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LoginServiceService } from './service/login-service.service';
 
 @Component({
   selector: 'app-root',
@@ -7,11 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Curso-Angular-REST';
-
-  usuario = {'login': 'felipe', 'senha':'123'};
-
-  public login() {
-    console.log("Teste Login : " + this.usuario.login + this.usuario.senha);
-  }
 
 }
