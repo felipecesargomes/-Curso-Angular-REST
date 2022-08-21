@@ -9,6 +9,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ModuleWithProviders } from '@angular/core';
 import { routing } from './app.routing';
 import { LoginComponent } from './login/login.component';
+import { HttpInterceptorModule } from './service/header-interceptor.service';
 
 
 
@@ -22,7 +23,8 @@ import { LoginComponent } from './login/login.component';
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    routing
+    routing,
+    HttpInterceptorModule
   ],
   providers: [],
   bootstrap: [AppComponent]

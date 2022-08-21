@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { LoginServiceService } from '../service/login-service.service';
 
 @Component({
@@ -7,16 +8,18 @@ import { LoginServiceService } from '../service/login-service.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-
-  ngOnInit(): void {
-  }
-
   
-  usuario = {'login': 'felipe', 'senha':'123'};
-
   constructor(private loginService: LoginServiceService) {
 
   }
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
+
+  
+  
+  usuario = {'login': 'felipe', 'senha':'123'};
+
 
   public login() {
     this.loginService.login(this.usuario);
