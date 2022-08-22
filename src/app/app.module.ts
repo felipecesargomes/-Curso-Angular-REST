@@ -10,6 +10,7 @@ import { ModuleWithProviders } from '@angular/core';
 import { routing } from './app.routing';
 import { LoginComponent } from './login/login.component';
 import { HttpInterceptorModule } from './service/header-interceptor.service';
+import { UsuarioComponent } from './component/usuario/usuario.component';
 
 
 
@@ -17,7 +18,8 @@ import { HttpInterceptorModule } from './service/header-interceptor.service';
   declarations: [
     AppComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    UsuarioComponent
   ],
   imports: [
     BrowserModule,

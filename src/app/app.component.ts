@@ -10,6 +10,8 @@ import { LoginServiceService } from './service/login-service.service';
 export class AppComponent implements OnInit {
   title = 'Curso-Angular-REST';
 
+  teste : any = 'primeiro';
+
   constructor(private router: Router) {
 
   }
@@ -19,8 +21,9 @@ export class AppComponent implements OnInit {
     if(localStorage.getItem('token')==null) {
       console.log('ok');
       this.router.navigate(['login']);
-    } else {
-      this.router.navigate(['home']);
+    } else if(this.teste == 'primeiro' ) {
+      this.router.navigate(['usuarioList']);
+      this.teste = 'segundo';
     }
 
   }
